@@ -1,0 +1,17 @@
+export default function Footer() {
+  const year = new Date().getFullYear();
+  return (
+    <footer className="border-t border-gray-100 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+          <p>© {year} Vibe Web Starter. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="hover:text-gray-700">Privacy</a>
+            <a href="#" className="hover:text-gray-700">Terms</a>
+            <a href="#" className="hover:text-gray-700">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
